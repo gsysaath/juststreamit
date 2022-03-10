@@ -1,0 +1,261 @@
+/* Settings start */
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: "Helvetica";
+    background-color: #141414;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    background-color: #e1ecf4;
+    border-radius: 3px;
+    border: 1px solid lightgrey;
+    color: black;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0;
+    padding: 8px .8em;
+    text-align: center;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #b3d3ea;
+    color: #2c5777;
+}
+
+.btn:focus {
+    box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.button-8:active {
+    background-color: #a0c7e4;
+    box-shadow: none;
+    color: #2c5777;
+}
+
+/* Settings end */
+
+/* Navbar start */
+
+nav {
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    height: 90px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #2c5777;
+    z-index: 1000;
+}
+
+#logo {
+    padding: 20px 30px;
+}
+
+#logo img {
+    height: auto;
+    width: 100px;
+}
+
+#navbar>ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 0 35vw;
+}
+
+#navbar>ul>li {
+    display: inline-block;
+    text-align: center;
+    margin: 0 60px 0 0;
+    font-size: 1.30rem;
+    padding-bottom: 8px;
+}
+
+#navbar>ul>li>a {
+    color: white;
+    text-decoration: none;
+}
+
+#navbar>ul>li:hover {
+    border-bottom: 1px solid white;
+}
+
+/* Navbar end */
+
+/* Vedette start */
+
+header {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+}
+
+header>div {
+    margin: 0 40px;
+}
+
+#vedette-left {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#vedette-left>div {
+    width: 100%;
+}
+
+#vedette-left>.title>p {
+
+    color: white;
+    font-size: 40px;
+}
+
+#vedette-left>.btn-div {
+    margin: 20px auto;
+}
+
+#vedette-left>.description {
+    margin-top: 20px;
+}
+
+#vedette-left>.description>p {
+    color: white;
+    font-size: 18px;
+}
+
+#vedette-right>img {
+    padding: 20px 0;
+    height: 100%;
+}
+
+/* Vedette end */
+
+/* Categories start */
+
+#categories {
+    color: white;
+    padding-bottom: 80px;
+}
+
+#categories>div {
+    margin: 50px 10vw;
+}
+
+.category-name {
+    margin-bottom: 25px;
+    font-size: 32px;
+    display: flex;
+}
+
+.category-name>p {
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+
+.swiper {
+    width: 100%;
+    height: 350px;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    border-radius: 8px;
+    height: 350px;
+    width: auto;
+    cursor: pointer;
+}
+
+.swiper-button-next {
+    right: 0rem;
+}
+
+.swiper-button-prev {
+    left: -3rem;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    height: 350px;
+    width: 120px;
+    top: 6%;
+    background: rgba(20, 20, 20, .5);
+    opacity: 0;
+}
+
+.active-img {
+    height: 450px;
+    width: auto;
+}
+
+/* Categories end */
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 12;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    /* Could be more or less, depending on screen size */
+}
+
+.modal-img {
+    display: flex;
+    margin: 0 auto;
+}
+
+/* The Close Button */
+
+.close {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.close:hover,
+.close:focus {
+    color: #2c5777;
+    text-decoration: none;
+    cursor: pointer;
+}

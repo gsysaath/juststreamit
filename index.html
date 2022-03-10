@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JustStreamIt</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navbar start -->
+        <nav>
+            <div id="logo">
+                <a href="#">
+                    <img src="media/logo-juststreamit.png" alt="JustStreamIt logo" />
+                </a>
+            </div>
+            <div id="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Category</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Navbar end -->
+
+        <!-- Vedette movie start-->
+        <header>
+            <div id="vedette-left">
+                <div class="title">
+                    <p id="vedette-movie-title"></p>
+                </div>
+                <div class="btn-div">
+                    <a href="" class="btn vedette-movie-button">More info</a>
+                </div>
+                <div class="description">
+                    <p id="vedette-movie-description"></p>
+                </div>
+            </div>
+            <div id="vedette-right">
+                <img src="https://m.media-amazon.com/images/M/MV5BNDEyYTA5OWEtYjNiYS00MGZlLThjYzEtMTc1Zjk2NDRmZmYxXkEyXkFqcGdeQXVyNzIwNTQyMw@@._V1_UY268_CR1,0,182,268_AL_.jpg" alt="vedette movie image" id="vedette-movie-image" />
+            </div>
+        </header>
+        <!-- Vedette movie end -->
+
+        <!-- Categories section start -->
+        <section id="categories">
+            <div id="category-best-movies">
+                <div class="category-name">
+                    <p>Best Movies</p>
+                </div>
+                <div class="swiper best-movies-swiper">
+                    <div class="swiper-wrapper" id="best-movies"></div>
+
+                    <div class="swiper-button-prev best-movies-prev"></div>
+                    <div class="swiper-button-next best-movies-next"></div>
+                </div>
+            </div>
+            <div id="category-1">
+                <div class="category-name">
+                    <p>Comedy</p>
+                </div>
+                <div class="swiper comedy-swiper">
+                    <div class="swiper-wrapper" id="comedy"></div>
+
+                    <div class="swiper-button-prev comedy-prev"></div>
+                    <div class="swiper-button-next comedy-next"></div>
+                </div>
+            </div>
+            <div id="category-2">
+                <div class="category-name">
+                    <p>Horror</p>
+                </div>
+                <div class="swiper horror-swiper">
+                    <div class="swiper-wrapper" id="horror"></div>
+
+                    <div class="swiper-button-prev horror-prev"></div>
+                    <div class="swiper-button-next horror-next"></div>
+                </div>
+            </div>
+            <div id="category-3">
+                <div class="category-name">
+                    <p>Drama</p>
+                </div>
+                <div class="swiper drama-swiper">
+                    <div class="swiper-wrapper" id="drama"></div>
+
+                    <div class="swiper-button-prev drama-prev"></div>
+                    <div class="swiper-button-next drama-next"></div>
+                </div>
+            </div>
+        </section>
+        <!-- Categories section end -->
+    </div>
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close justify-content-end">&times;</span>
+            <img class="modal-img" />
+            <h3 class="modal-title"></h3>
+            <p class="modal-genre"></p>
+            <p class="modal-release-date"></p>
+            <p class="modal-rating"></p>
+            <p class="modal-imdb-score"></p>
+            <p class="modal-directors"></p>
+            <p class="modal-actors"></p>
+            <p class="modal-duration"></p>
+            <p class="modal-country"></p>
+            <p class="modal-worldwide-income"></p>
+            <p class="modal-description"></p>
+        </div>
+    </div>
+    <script src="js/fetch_best_movie.js"></script>
+    <script src="js/fetch_best_movies_swiper.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/fetch_categories.js"></script>
+    <script src="js/swipers_buttons_opacity.js"></script>
+</body>
+
+</html>
